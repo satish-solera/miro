@@ -40,13 +40,16 @@ export const Navbar = () => {
 
       <DesktopNav className='hidden md:flex' />
       <div className="flex shadow-md justify-around md:hidden px-4 py-4">
-        <h1 className=' text-2xl font-medium itmes-center'>Miro</h1>
-<button onClick={() => setOpen((prev) => !prev)}>click</button>
-        
+        <div className="">
+          <h1 className=' text-2xl font-medium itmes-center'>Miro</h1>
+
+        </div>
+ <div className="">
+  <button onClick={() => setOpen((prev) => !prev)}>click</button>
         {
-          
+
           open && <div className="flex flex-col">
-           
+
             {
               navlinks.map((nav, id) => {
                 return (
@@ -60,6 +63,7 @@ export const Navbar = () => {
             }
           </div>
         }
+ </div>
 
 
       </div>

@@ -6,8 +6,9 @@ import { Heading } from './ui/heading'
 import { SubHeading } from './ui/subHeading'
 import { Button } from './ui/button'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
-
+import brainstorm from '../../public/brainstorm.png'
 export const Hero = () => {
     return (
         <div className='flex  items-center'>
@@ -26,13 +27,13 @@ export const Hero = () => {
                     </Button>
 
                  
-                    <div className="flex gap-6 items-center bg-gray-200/80  max-w-[300px] rounded-sm mt-10">
-                        <div className="flex flex-col"
+                    <div className="flex gap-6 items-center bg-gray-200/80  max-w-[300px] rounded-sm mt-10 px-2">
+                        <div className="flex flex-col "
 
 
                         >
                             <span>start</span>
-                            <span className='text-xs'>Based on 5149+ reviews</span>
+                            <span className='text-xs '>Based on 5149+ reviews</span>
                         </div>
 
                         <SubHeading as='h4' className='font-bold'>
@@ -46,8 +47,8 @@ export const Hero = () => {
                 </div>
 
                 <div className=" flex flex-col ">
-                    <div className="md:w-lg md:h-60 w-[250px] h-44 mx-auto md:mx-0 bg-amber-600 text-white items-center">
-                        image 1
+                    <div className="md:w-lg md:h-60 w-[250px] h-44 mx-auto md:mx-0 mt-0 ">
+                     <Image src={brainstorm} alt='brain storm hero image' />
                     </div>
                     <div className="md:w-lg md:h-16  py-2 grid grid-cols-1 md:grid-cols-3 gap-1 items-center "
 

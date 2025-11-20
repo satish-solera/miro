@@ -1,12 +1,18 @@
 import React from 'react'
 import { Container } from './container'
 import { spawn } from 'child_process'
+import cisco from '../../public/cisco.png'
+import Walmart from '../../public/Walmart.png'
+import deloitte from '../../public/deloitte.png'
+import volvo from '../../public/volvo.png'
+import Image from 'next/image'
+
 
 export const Company = () => {
     return (
-        <div className='md:py-4'>
+        <div className='md:pt-8'>
             <Container className='flex flex-col items-center justify-center'>
-                <span className='py-2 font-medium'>Trusted by 45M+ Users</span>
+                <span className=' font-medium'>Trusted by 45M+ Users</span>
                 <CompanyNames/>
             </Container>
         </div>
@@ -17,27 +23,29 @@ export const Company = () => {
 export const CompanyNames = () => {
     const names = [
         {
-            title: 'Walmart'
+            title: 'Walmart' ,
+            img : Walmart
         },
         {
-            title: 'Cisco'
+            title: 'Cisco',
+            img: cisco
         },
         {
-            title: 'Deloitte'
+            title: 'Deloitte',
+            img: deloitte
         },
         {
-            title: 'okta'
+            title: 'Volvo',
+            img: volvo
         }
     ]
     return (
-        <div className="flex md:gap-20 gap-3 md:py-4 ">
+        <div className="flex md:gap-x-20 gap-3 md:py-4 ">
             {
-                names.map((names , id)=>{
+                names.map((ele , id)=>{
                     return (
-                       <span key={id} className='flex text-xs md:text-normle size-15 md:size-20 bg-red-50 justify-center items-center '>
-                        {
-                            names.title
-                        }
+                       <span key={id} className='flex text-xs md:text-normle size-15 md:size-40  justify-center items-center '>
+                        <Image src={ele.img} alt={ele.title} />
                        </span>
                     )
                 })

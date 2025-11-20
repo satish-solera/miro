@@ -10,7 +10,7 @@ export const ConnectSection = () => {
 
 
 
-        <Container className='flex justify-center items-center gap-x-24 '>
+        <Container className='flex justify-center items-center gap-x-24 -mt-3'>
             {/* <div className=" flex-1 rounded-t-3xl gap-2 flex items-center justify-center absolute left-36 ">
                 <Circle className='size-60 bg-red-500 z-8'>
 

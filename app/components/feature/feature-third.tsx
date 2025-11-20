@@ -5,7 +5,8 @@ import { Container } from '../container'
 import { Heading } from '../ui/heading'
 import { Button } from '../ui/button'
 import { SubHeading } from '../ui/subHeading'
-
+import Image from 'next/image'
+import brainstorm from '../../../public/brainstorm.png'
 export const ThirdFeature = () => {
     const list = [
         {
@@ -73,7 +74,7 @@ export const ThirdFeature = () => {
                     }
 
 
-                    <div className="flex flex-col md:flex-row md:gap-10 md:py-7 ">
+                    <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-10 md:py-4 ">
                         <div className="overflow-hidden md:max-w-[165px]">
                             <SubHeading>
                                 {
@@ -90,8 +91,8 @@ export const ThirdFeature = () => {
                             </Button>
                         </div>
 
-                        <div className="md:w-lg w-[250px] h-44 md:h-60 bg-red-500 flex-none ml-5">
-                            hi
+                        <div className="md:w-lg w-[250px] h-44 md:h-80 mx-auto md:mr-12">
+                            <Image src={brainstorm} alt='brain storm ' />
                         </div>
                     </div>
 

@@ -31,7 +31,7 @@ export const Section = () => {
 
 export const Para = ({ head, para }: { head: string, para: string }) => {
     return (
-        <div className="max-w-[300px] bg-neutral-100 p-1">
+        <div className="max-w-[300px] bg-neutral-100 border border-neutral-200 rounded-sm p-1">
             <h1 className='font-bold'>{head}</h1>
             <p>{para}</p>
         </div>
