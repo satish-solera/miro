@@ -5,7 +5,9 @@ import { Container } from '../container'
 import { Heading } from '../ui/heading'
 import { Button } from '../ui/button'
 import { SubHeading } from '../ui/subHeading'
+import Image from 'next/image'
 
+import profile from '../../../public/profile.png'
 export const SixFeature = () => {
 
     const [userCount, setUserCount] = useState(45)
@@ -92,7 +94,7 @@ export const Card = ({ title, description, name, position }:
 
 
     return (
-        <div className="w-[200px] px-2  shadow mx-auto ">
+        <div className="w-[200px] px-2  shadow mx-auto rounded-md ">
 
 
 
@@ -110,7 +112,9 @@ export const Card = ({ title, description, name, position }:
             </div>
 
             <div className="flex gap-2 my-4 h-fit items-center">
-                <div className="size-10 bg-amber-600 rounded-full">
+                <div className="size-10  ">
+                    <Image src={profile} alt='profile' className='object-cover rounded-full' />
+
 
                 </div>
                 <span className='text-xs mt-2 '>{name} <br />

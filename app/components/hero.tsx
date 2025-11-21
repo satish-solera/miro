@@ -22,7 +22,7 @@ export const Hero = () => {
                         colloborate, and create - together.
                     </SubHeading>
 
-                    <Button className='bg-blue-600 md:text-xl text-white md:px-[107px] md:py-1  p-2 md:p-0'>
+                    <Button className='bg-blue-600 md:text-xl text-white md:px-[107px] md:py-1  p-2 '>
                         Sign up free
                     </Button>
 
@@ -50,7 +50,7 @@ export const Hero = () => {
                     <div className="md:w-lg md:h-60 w-[250px] h-44 mx-auto md:mx-0 mt-0 ">
                      <Image src={brainstorm} alt='brain storm hero image' />
                     </div>
-                    <div className="md:w-lg md:h-16  py-2 grid grid-cols-1 md:grid-cols-3 gap-1 items-center "
+                    {/* <div className="md:w-lg md:h-16  py-2 grid grid-cols-1 md:grid-cols-3 gap-1 items-center "
 
                     >
                         <BottomImg>
@@ -64,7 +64,7 @@ export const Hero = () => {
                             3
                         </BottomImg>
 
-                    </div>
+                    </div> */}
                 </div>
 
             </Container>

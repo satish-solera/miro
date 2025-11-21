@@ -17,13 +17,16 @@ export const ConnectSection = () => {
                 </Circle>
                 <Circle className='bg-amber-400 size-50 z-9'></Circle>
             </div> */}
-            <div className="">
-                <Heading>
+            <div className="flex flex-col md:flex-row justify-between gap-5">
+              <div className="">
+                  <Heading>
                     Connect <br />
                     your tools, <br />
                     close your tabs
                 </Heading>
-                <SubHeading>
+              </div>
+               <div className="">
+                 <SubHeading>
                     Whether you want to edit your Google Docs, Resolve <br />
                     Jira issuses, or colloborate over Zoom, Miro has 100+ <br />
                     integration with tools you already use and love.
@@ -31,6 +34,7 @@ export const ConnectSection = () => {
                 <Button className='underline text-blue-500'>
                     Learn more
                 </Button>
+               </div>
             </div>
 
         </Container>

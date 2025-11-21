@@ -1,3 +1,6 @@
+
+'use client'
+
 import React from 'react'
 import { Container } from '../container'
 import { Heading } from '../ui/heading'
@@ -5,7 +8,12 @@ import { cn } from '../../utils/utils'
 import { SubHeading } from '../ui/subHeading'
 import { Button } from '../ui/button'
 import Image from 'next/image'
+
+
 import hybridwork from '../../../public/hybridwork.png'
+import { motion } from 'framer-motion'
+
+
 export const WorkSection = () => {
     return (
         <Container className='flex md:flex-row flex-col h-[350px] justify-center gap-x-5 py-5 md:pt-10'>
@@ -14,12 +22,20 @@ export const WorkSection = () => {
                     Work Together, <br />
                     Wherever you work
                 </Heading>
-                <SubHeading>
-                    In the office,remote, or a mix of the two, with Miro, <br />
-                    your team can connect, colloborate, and co-create in <br />
-                    one space no matter where you are.
 
-                </SubHeading>
+                <motion.div className=""
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1}}
+                    transition={{ duration: 0.5 }}
+                >
+
+                    <SubHeading>
+                        In the office,remote, or a mix of the two, with Miro, <br />
+                        your team can connect, colloborate, and co-create in <br />
+                        one space no matter where you are.
+
+                    </SubHeading>
+                </motion.div>
                 <Button className='underline text-blue-500'>
                     Learn more
                 </Button>
@@ -28,7 +44,7 @@ export const WorkSection = () => {
                 {/* <Card /> */}
 
                 {/* <div className="flex flex-col md:gap-y-12 relative"> */}
-                    {/* <Card className='my-8 md:-my-8' />
+                {/* <Card className='my-8 md:-my-8' />
                     <div className="flex justify-center items-center relative mx-4">
                         <Circle className=' border-2 border-blue-800 z-0'></Circle>
                         <Circle className='-translate-x-4 z-1 border-2 border-white bg-amber-200'></Circle>

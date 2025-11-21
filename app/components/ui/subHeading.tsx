@@ -8,7 +8,7 @@ export const SubHeading = ({ className, children, as = 'h3' }: {
 }) => {
     const Tag = as
     return (
-        <Tag className={cn('text-xs md:text-lg lg:text-sm max-w-2xl md:py-4', className)}>
+        <Tag className={cn('text-xs md:text-lg lg:text-sm max-w-2xl md:py-4 font-mono', className)}>
             {
                 children
             }

@@ -9,6 +9,6 @@ export const Heading = ({ className, children, as = 'h2' }: {
     const Tag = as
     return (
 
-        <Tag className={cn('text-xl md:text-2xl lg:text-5xl font-bold ', className)}>{children}</Tag>
+        <Tag className={cn('text-xl md:text-2xl lg:text-5xl font-bold font-sans', className)}>{children}</Tag>
     )
 }
