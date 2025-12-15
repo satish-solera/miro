@@ -11,12 +11,15 @@ import Image from 'next/image'
 
 
 import hybridwork from '../../../public/hybridwork.png'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 
 export const WorkSection = () => {
     return (
-        <Container className='flex md:flex-row flex-col h-[350px] justify-center gap-x-5 py-5 md:pt-10'>
+
+
+
+        <Container className='flex md:flex-row flex-col h-[350px] justify-center gap-5  md:pt-10'>
             <div className="">
                 <Heading as='h3'>
                     Work Together, <br />
@@ -24,16 +27,18 @@ export const WorkSection = () => {
                 </Heading>
 
                 <motion.div className=""
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1}}
-                    transition={{ duration: 0.5 }}
+                    initial={{opacity: 0 , y:10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    style={{
+                        opacity: 0
+                    }}
                 >
-
                     <SubHeading>
-                        In the office,remote, or a mix of the two, with Miro, <br />
-                        your team can connect, colloborate, and co-create in <br />
+                        In the office, remote, or a mix of the two, with Miro, <br />
+                        your team can connect, collaborate, and co-create in <br />
                         one space no matter where you are.
-
                     </SubHeading>
                 </motion.div>
                 <Button className='underline text-blue-500'>
@@ -58,7 +63,11 @@ export const WorkSection = () => {
 
                 <Image src={hybridwork} alt='hybrid work' height={400} width={400} />
             </div>
+
+
         </Container>
+
+
     )
 }
 
