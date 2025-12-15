@@ -65,7 +65,7 @@ export const FourFeature = () => {
                     </Heading>
                 </div>
 
-                <div className="">
+                <div className="mt-5">
                     {
                         list.map((el, id) => {
                             return (
@@ -81,17 +81,17 @@ export const FourFeature = () => {
 
                    <div className="flex flex-col md:flex-row justify-between md:gap-10 md:py-4 ">
                         <div className="overflow-hidden md:max-w-[165px]">
-                            <SubHeading>
+                            <SubHeading >
                                 {
                                     topic.title
                                 }
                             </SubHeading>
-                            <p className=' text-balance'>
+                            <p className='text-balance text-red-500 -mt-2 text-[18px]'>
                                 {
                                     topic.description
                                 }
                             </p>
-                            <Button className='text-blue-800 pl-0'>
+                            <Button className='text-blue-800 pl-0 '>
                                 Learn More
                             </Button>
                         </div>

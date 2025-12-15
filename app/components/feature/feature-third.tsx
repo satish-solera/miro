@@ -7,6 +7,8 @@ import { Button } from '../ui/button'
 import { SubHeading } from '../ui/subHeading'
 import Image from 'next/image'
 import brainstorm from '../../../public/brainstorm.png'
+import { motion } from 'motion/react'
+motion
 export const ThirdFeature = () => {
     const list = [
         {
@@ -60,14 +62,16 @@ export const ThirdFeature = () => {
                     </Heading>
                 </div>
 
-                <div className="">
+                <div className="mt-5">
                     {
                         list.map((el, id) => {
                             return (
-                                <Button className='border border-neutral-300 rounded-full md:p-2 m-2' key={id} onClick={() => setTopic(el)}>
+                                <Button className='border border-neutral-300 rounded-full md:p-2 m-2 ' key={id} onClick={() => setTopic(el)}>
+
                                     {
                                         el.title
                                     }
+
                                 </Button>
                             )
                         })
