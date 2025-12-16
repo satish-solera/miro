@@ -8,6 +8,7 @@ import { SubHeading } from '../ui/subHeading'
 import Image from 'next/image'
 
 import profile from '../../../public/profile.png'
+import { AnimatePresence, motion } from 'motion/react'
 export const SixFeature = () => {
 
     const [userCount, setUserCount] = useState(45)
@@ -78,6 +79,9 @@ export const SixFeature = () => {
                 </Button>
                 <Button className='shadow-brand bg-blue-600 text-white  my-3 px-4 w-fit mx-auto py-2'>Sign up free </Button>
             </div>
+
+
+
         </Container>
     )
 }
@@ -94,7 +98,36 @@ export const Card = ({ title, description, name, position }:
 
 
     return (
-        <div className="w-[200px] px-2  shadow mx-auto rounded-md ">
+
+        <motion.div
+            initial={{
+
+
+                border: "none"
+            }}
+
+            // borderBottom: 'solid oklch(62.3% 0.214 259.815)',
+            //     borderRight: 'solid oklch(62.3% 0.214 259.815)',
+            //     borderLeft: 'solid oklch(62.3% 0.214 259.815)',
+            whileHover={{
+
+              
+
+                borderTop: '0.2px solid oklch(62.3% 0.214 259.815)',
+
+            }}
+
+        
+
+            transition={{
+                duration: 0.3
+            }}
+
+
+
+
+
+            className="w-[200px] px-2  shadow mx-auto rounded-md  ">
 
 
 
@@ -123,6 +156,8 @@ export const Card = ({ title, description, name, position }:
             </div>
 
 
-        </div>
+        </motion.div>
+
+
     )
 }
