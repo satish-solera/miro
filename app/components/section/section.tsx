@@ -15,15 +15,26 @@ export const Section = () => {
                     Collaborate without <br />
                     <span className='px-24'>constraints</span>
                 </Heading>
-                <div
 
+                <motion.div
 
+                    initial={{
+                        opacity: 0
+                    }}
+                    whileInView={{
+                        opacity: 1
+                    }}
+
+                    transition={{
+                        duration: 0.4,
+
+                    }}
                     className="flex flex-col md:flex-row gap-2 justify-center py-4">
                     <Para head='Free Forever' para='Our free plan gives you unlimited team members.' />
                     <Para head='Easy integration' para='Miro has 100+ powerfull integration with tools you alredy use like G-suit,slack.' />
                     <Para head='Free Forever' para='Our free plan gives you unlimited team' />
+                </motion.div>
 
-                </div>
                 <motion.div
 
 
@@ -41,14 +52,14 @@ export const Section = () => {
 
 export const Para = ({ head, para }: { head: string, para: string }) => {
     return (
-     
 
-            <motion.div
-         
-                className="max-w-[300px] bg-neutral-100 border border-neutral-200 rounded-md p-1">
-                <h1 className='font-bold'>{head}</h1>
-                <p>{para}</p>
-            </motion.div>
-        
+
+        <motion.div
+
+            className="max-w-[300px] bg-neutral-100 border border-neutral-200 rounded-md p-1">
+            <h1 className='font-bold'>{head}</h1>
+            <p>{para}</p>
+        </motion.div>
+
     )
 }
