@@ -1,7 +1,7 @@
 import React from 'react'
 import { cn } from '../../utils/utils'
 
-export const Heading = ({ className, children, as = 'h2' }: {
+export const Heading = ({ className, children, as = 'h1' }: {
     className?: string,
     children: React.ReactNode,
     as?: 'h1' | 'h2' | 'h3'
