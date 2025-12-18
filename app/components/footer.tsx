@@ -45,7 +45,7 @@ export const List = ({ heading, list }: { heading: string, list?: [] }) => {
                }
             </SubHeading>
             <ul>
-                <li>
+                <li className='text-neutral-100'>
                     Online Whiteboard
                 </li>
             </ul>
