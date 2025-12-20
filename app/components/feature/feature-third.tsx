@@ -66,7 +66,9 @@ export const ThirdFeature = () => {
                     {
                         list.map((el, id) => {
                             return (
-                                <Button className='border border-neutral-300 rounded-full md:p-2 m-2 ' key={id} onClick={() => setTopic(el)}>
+                                <Button
+                                
+                                className='border border-neutral-300 rounded-full md:p-2 m-2 ' key={id} onClick={() => setTopic(el)}>
 
                                     {
                                         el.title
