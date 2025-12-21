@@ -1,5 +1,5 @@
+import { cn } from '@/app/utils/utils'
 import React from 'react'
-import { cn } from '../../utils/utils'
 
 export const Heading = ({ className, children, as = 'h1' }: {
     className?: string,

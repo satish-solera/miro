@@ -1,7 +1,7 @@
 
 'use client'
 import React, { useState, useEffect } from 'react'
-import { Container } from '../container'
+import { Container } from '../ui/container'
 import { Heading } from '../ui/heading'
 import { Button } from '../ui/button'
 import { SubHeading } from '../ui/subHeading'

@@ -9,7 +9,7 @@ import {motion} from 'motion/react'
 import Image from 'next/image'
 
 
-import brainstorm from '../../public/brainstorm.png'
+import brainstorm from '../../../public/brainstorm.png'
 export const Hero = () => {
     return (
         <div className='flex  items-center'>

@@ -1,10 +1,10 @@
 'use client'
 import { Container } from './container'
 
-import cisco from '../../public/cisco.png'
-import Walmart from '../../public/Walmart.png'
-import deloitte from '../../public/deloitte.png'
-import volvo from '../../public/volvo.png'
+import cisco from '../../../public/cisco.png'
+import Walmart from '../../../public/Walmart.png'
+import deloitte from '../../../public/deloitte.png'
+import volvo from '../../../public/volvo.png'
 import Image from 'next/image'
 import { motion } from 'motion/react'
 

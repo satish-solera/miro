@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heading } from '../ui/heading'
 import { Button } from '../ui/button'
-import { Container } from '../container'
+import { Container } from '../ui/container'
 import { SubHeading } from '../ui/subHeading'
 
 export const FifthFeature = () => {

@@ -4,8 +4,9 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { Button } from './button'
 
-import { cn } from '../../utils/utils'
+
 import { motion } from 'motion/react'
+import { cn } from '@/app/utils/utils'
 motion
 
 const navlinks = [
