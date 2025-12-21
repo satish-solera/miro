@@ -1,9 +1,10 @@
 'use client'
 import React from 'react'
-import { Container } from '../container'
+import { Container } from '../ui/container'
 import { Heading } from '../ui/heading'
 import { Button } from '../ui/button'
 import { AnimatePresence, motion } from 'framer-motion'
+import { BentoGrid } from '../ui/bentoGrid'
 
 
 export const Section = () => {
@@ -16,7 +17,7 @@ export const Section = () => {
                     <span className='px-24'>constraints</span>
                 </Heading>
 
-                <motion.div
+                {/* <motion.div
 
                     initial={{
                         opacity: 0
@@ -33,7 +34,9 @@ export const Section = () => {
                     <Para head='Free Forever' para='Our free plan gives you unlimited team members.' />
                     <Para head='Easy integration' para='Miro has 100+ powerfull integration with tools you alredy use like G-suit,slack.' />
                     <Para head='Free Forever' para='Our free plan gives you unlimited team' />
-                </motion.div>
+                </motion.div> */}
+
+                <BentoGrid />
 
                 <motion.div
 
