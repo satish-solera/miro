@@ -1,5 +1,5 @@
+import { cn } from '@/app/utils/utils'
 import React from 'react'
-import { cn } from '../../utils/utils'
 
 export const SubHeading = ({ className, children, as = 'h3' }: {
     className?: string,

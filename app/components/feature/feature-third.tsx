@@ -1,14 +1,14 @@
 
 'use client'
 import React, { useState } from 'react'
-import { Container } from '../container'
+import { Container } from '../ui/container'
 import { Heading } from '../ui/heading'
 import { Button } from '../ui/button'
 import { SubHeading } from '../ui/subHeading'
 import Image from 'next/image'
 import brainstorm from '../../../public/brainstorm.png'
 import { motion } from 'motion/react'
-motion
+
 export const ThirdFeature = () => {
     const list = [
         {

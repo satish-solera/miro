@@ -1,6 +1,8 @@
+
+
 import Image from "next/image";
-import { Hero } from "./components/hero";
-import { Company } from "./components/company";
+import { Hero } from "./components/ui/hero";
+import { Company } from "./components/ui/company";
 import { Section } from "./components/section/section";
 import { WorkSection } from "./components/section/work-section";
 import { ConnectSection } from "./components/section/connect-section";
@@ -12,6 +14,7 @@ import { SixFeature } from "./components/feature/feature-six";
 export default function Home() {
   return (
     <div className="min-h-screen">
+       
       <Hero />
       <Company />
       <Section />
@@ -21,6 +24,8 @@ export default function Home() {
       <FourFeature />
       <FifthFeature />
       <SixFeature />
+
+     
     </div>
   );
 }

@@ -2,7 +2,7 @@
 'use client'
 
 import React from 'react'
-import { Container } from '../container'
+import { Container } from '../ui/container'
 import { Heading } from '../ui/heading'
 import { cn } from '../../utils/utils'
 import { SubHeading } from '../ui/subHeading'

@@ -1,5 +1,6 @@
+import { cn } from '@/app/utils/utils'
 import React from 'react'
-import { cn } from '../../utils/utils'
+
 
 export const Button = ({ className, children , ...props}:
     React.ButtonHTMLAttributes<HTMLButtonElement>) => {
